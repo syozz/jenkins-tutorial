@@ -2,7 +2,7 @@
 def keptn = new sh.keptn.Keptn()
 
 node {
-    properties([
+    nodeProperties([
         parameters([
          string(defaultValue: 'qgproject', description: 'Name of your Keptn Project for Quality Gate Feedback ', name: 'Project', trim: false), 
          string(defaultValue: 'qualitystage', description: 'Stage in your Keptn project used for for Quality Gate Feedback', name: 'Stage', trim: false), 
